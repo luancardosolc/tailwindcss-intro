@@ -4,3 +4,6 @@
 # Code Editors
 /.vscode
 /.idea
+
+# Output folder
+/dist

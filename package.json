@@ -4,12 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build:css": "tailwind build -i src/style.css -o dist/style.css"
+    "build:css": "tailwind build -i ./src/style.css -o ./dist/style.css",
+    "build:watch": "mkdirp dist/ && cp ./src/*.html ./dist && tailwind build -i ./src/style.css -o ./dist/style.css --watch"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {
+  "devDependencies": {
+    "mkdirp": "^1.0.4",
     "tailwindcss": "^3.0.8"
   }
 }

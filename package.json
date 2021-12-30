@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build:css": "tailwind build -i ./src/style.css -o ./dist/style.css",
-    "build:watch": "mkdirp dist/ && cp ./src/*.html ./dist && tailwind build -i ./src/style.css -o ./dist/style.css --watch"
+    "build": "mkdirp dist/ && cp ./src/*.html ./dist && tailwind build -i ./src/style.css -o ./dist/style.css",
+    "watch": "mkdirp dist/ && cp ./src/*.html ./dist && tailwind build -i ./src/style.css -o ./dist/style.css --watch"
   },
   "keywords": [],
   "author": "",
